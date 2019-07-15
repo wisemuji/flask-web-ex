@@ -9,5 +9,6 @@ main = Blueprint('main', __name__, url_prefix='/')
  
 @main.route('/main', methods=['GET'])
 def index():
-      # /main/index.html은 사실 /project_name/app/templates/main/index.html을 가리킵니다.
-      return render_template('/main/index.html')
+    testData = 'testData array'
+ 
+    return render_template('/main/index.html', testDataHtml=testData)
