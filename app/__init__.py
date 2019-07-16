@@ -8,6 +8,8 @@ app = Flask(__name__)
  
 # 파일 이름이 index.py이므로
 from app.main.index import main as main
+from app.test.test import test as test
  
 # 위에서 추가한 파일을 연동해주는 역할
 app.register_blueprint(main) # as main으로 설정해주었으므로
+app.register_blueprint(test) # as main으로 설정해주었으므로
